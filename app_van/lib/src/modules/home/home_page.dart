@@ -1,3 +1,4 @@
+import 'package:app_van/src/shared/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.purple.shade700,
+      backgroundColor: AppColors.darkBlue,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -54,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                 height: size.height * 0.6,
                 width: size.width * 0.8,
                 child: Card(
-                  color: Colors.blue,
+                  color: AppColors.blue,
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Column(
@@ -76,10 +77,18 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero,
+                primary: AppColors.cian,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(27.0),
+                  side: const BorderSide(color: AppColors.cian),
+                ),
+              ),
               onPressed: () {},
               child: const SizedBox(
                 height: 80,
-                width: 200,
+                width: 300,
                 child: Center(
                   child: Text(
                     'Iniciar corrida',
