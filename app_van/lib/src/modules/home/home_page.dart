@@ -85,7 +85,7 @@ class _HomePageState extends State<HomePage> {
                   side: const BorderSide(color: AppColors.cian),
                 ),
               ),
-              onPressed: () {},
+              onPressed: () => Navigator.pushNamed(context, '/Navigation'),
               child: const SizedBox(
                 height: 80,
                 width: 300,
