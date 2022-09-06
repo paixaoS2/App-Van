@@ -10,6 +10,16 @@ class NavigationPage extends StatefulWidget {
 class _NavigationPageState extends State<NavigationPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Mapinha'),
+      ),
+      body: const Center(
+        child: Text(
+          'O mapa vai aparecer aqui ó\n falta só a chave da api do google maps',
+          style: TextStyle(fontSize: 22),
+        ),
+      ),
+    );
   }
 }
